@@ -36,6 +36,10 @@ export default {
     page: {
       type: Number,
       required: true
+    },
+    perPage: {
+      type: Number,
+      required: true
     }
   },
   components: {
@@ -45,7 +49,7 @@ export default {
     return {
       events: null,
       totalEvents: 0, // <-- Added this to store totalEvents
-      perPage: 3 // Max event per page
+      
     }
   },
   created() {
